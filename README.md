@@ -17,7 +17,7 @@ add for own database:
 ```
   --link flowable-postgres \
   -e SPRING_DATASOURCE_DRIVER-CLASS-NAME='org.postgresql.Driver' \
-  -e SPRING_DATASOURCE_URL='jdbc:postgresql://flowable-postgres:5432/flowhub' \
+  -e SPRING_DATASOURCE_URL='jdbc:postgresql://flowable-postgres:5432/flowable' \
   -e SPRING_DATASOURCE_USERNAME='flowable' \
   -e SPRING_DATASOURCE_PASSWORD='test' \
 ```
