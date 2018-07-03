@@ -21,3 +21,4 @@ add for own database:
   -e SPRING_DATASOURCE_USERNAME='flowable' \
   -e SPRING_DATASOURCE_PASSWORD='test' \
 ```
+now you can navigate to http://localhost:9080/flowable-modeler/
