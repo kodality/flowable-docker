@@ -1,7 +1,7 @@
 # flowable-docker
 
 ```
-docker run -d
+docker run -d \
   --name=flowable \
   -p 9080:8080 \
   -e FLOWABLE_COMMON_APP_IDM-URL='http://localhost:8080/flowable-idm' \
@@ -13,6 +13,7 @@ docker run -d
   kodality/flowable
 ```
 
+add for own database:
 ```
   --link flowable-postgres \
   -e SPRING_DATASOURCE_DRIVER-CLASS-NAME='org.postgresql.Driver' \
