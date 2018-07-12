@@ -8,7 +8,7 @@ docker run -d \
   -e FLOWABLE_COMMON_APP_IDM-REDIRECT-URL='http://localhost:9080/flowable-idm' \
   -e FLOWABLE_COMMON_APP_IDM-ADMIN.USER=admin \
   -e FLOWABLE_COMMON_APP_IDM-ADMIN.PASSOWRD=test \
-  -e FLOWABLE_MODELER_APP_DEPLOYMENT-API-URL='http://localhost:8080/flowable-task/process-api' \
+  -e FLOWABLE_MODELER_APP_DEPLOYMENT-API-URL='http://localhost:8080/flowable-task/app-api' \
   --restart=unless-stopped \
   kodality/flowable
 ```
