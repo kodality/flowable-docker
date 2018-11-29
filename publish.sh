@@ -1,14 +1,12 @@
 #!/bin/bash
-cd `dirname $0`
 
 repo="kodality"
 name="flowable"
+tag="6.4.0"
 
 #docker login || exit 1
-./build.sh
+docker build -t $repo/$name . || exit 1
 
-version=$(date +%s)
-docker tag $repo/$name:latest $repo/$name:$version &&\
-docker push $repo/$name:$version &&\
 docker push $repo/$name:latest
-
+docker tag $repo/$name $repo/$name:$tag && \
+docker push $repo/$name:$tag
